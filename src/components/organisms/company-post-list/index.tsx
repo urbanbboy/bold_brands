@@ -25,7 +25,7 @@ export const CompanyPostList = ({ title }: { title?: string }) => {
                 error={error}
                 data={data}
             >
-                <div className="max-w-[1280px] m-auto flex flex-col lg:flex-row lg:justify-between gap-5 mb-8 px-5 lg:px-0">
+                <div className="max-w-[1280px] m-auto flex flex-col lg:flex-row lg:justify-between gap-5 mb-8 px-5 lg:px-0 md:ml-28 lg:mr-20 2xl:mr-0 2xl:ml-44">
                     <Heading as="h2" className={cn(title ? 'w-full' : 'lg:w-3/4')}>{title ? title : data?.title}</Heading>
                     <Link href="/cases" className="flex items-end">
                         <ButtonWithIcon variant="feature">Все кейсы</ButtonWithIcon>
@@ -41,7 +41,7 @@ export const CompanyPostList = ({ title }: { title?: string }) => {
                                 delay: 8000,
                             })
                         ]}
-                        className="w-full hidden md:flex"
+                        className="w-full hidden md:flex md:ml-28 2xl:ml-44"
                     >
                         <CarouselContent className="w-full gap-4">
                             {data?.items.map((post, idx) => (
