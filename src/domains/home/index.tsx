@@ -20,6 +20,8 @@ const ClientReviewList = dynamic(() => import("@/components/organisms/client-rev
 const FormLayout = dynamic(() => import("@/components/templates/form-layout"));
 const FeedbackForm = dynamic(() => import("@/components/forms/feedback-form"));
 
+export const revalidate = 60
+
 const HomePage = async () => {
     const t = await getTranslations("HomePage");
     const banners = await getBanners();

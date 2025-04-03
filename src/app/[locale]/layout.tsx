@@ -166,7 +166,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <body className={`${cannonade.className} antialiased `}>
                 <noscript>
                     <div>
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        { }
                         <img
                             src="https://mc.yandex.ru/watch/100644188"
                             style={{ position: "absolute", left: "-9999px" }}
@@ -175,7 +175,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                     </div>
                 </noscript>
                 <noscript>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    { }
                     <img
                         height="1"
                         width="1"
